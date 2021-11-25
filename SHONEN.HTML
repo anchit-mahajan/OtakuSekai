@@ -1,0 +1,328 @@
+<!doctype html>
+<html>
+<head>
+<Title>SHONEN</Title>
+</head>
+<style>
+#LAST{
+ position: absolute;
+    bottom: 0;
+}
+
+body {
+  background-color:rgb(94,0,0);  
+background-image: url('img/background.JPG');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(94,0,0);
+  min-width: 60px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 1px 6px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  ;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+.icon-bar {
+  width: 100%; /* Full-width */
+  background-color: rgb(94,0,0);
+  overflow: auto; /* Overflow due to float */
+}
+
+.icon-bar a {
+  float: left; 
+  text-align: center;   width: 14%; /* Equal width (5 icons with 20% width each = 100%) */
+  padding: 12px 0; /* Some top and bottom padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 36px; /* Increased font size */
+}
+
+.icon-bar a:hover {
+  background-color: rgb(210,0,0);
+}
+
+.active {
+  background-color: rgb(94,0,0);
+}
+.slideshow-container {
+    background-attachment: fixed;
+  background-size: 100% 100%;
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+  display: none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(94,0,0);
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(94,0,0,);
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: lightgrey;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+  background-color:red;
+}.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+	}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.topnav input[type=text]
+{
+float:right;
+padding:6px;
+border:0px;
+margin-top:8px;
+margin-right:70px;
+font-size:17px
+}
+.topnavbutton
+{
+margin-top:15px;
+margin-right:60px;
+}
+.topnavbutton[hover]
+{
+color:blue;
+}
+</style>
+<Body style="background-color:lightgrey ">
+<CENTER><DIV CLASS="CONTAINER" STYLE="BACKGROUND-COLOR:rgb(94,0,0)">
+<H1 STYLE="COLOR:lightgrey">SHONEN ANIME</H1>
+</DIV>
+<MARQUEE style="background-color:rgb(94,0,0) "><B STYLE="COLOR:LIGHTgrey">THIS IS PAGE IS FOR SHONEN COMMUNITY. SHONEN MEANS AIMED PRIMARILY AT A YOUNG MALE AUDIENCE.</B></MARQUEE> 
+</center>
+<CENTER style="COLOR:LIGHTGREY"><div class ="icon-bar" STYLE="BACKGROUND-COLOR:rgb(94,0,0)"  id="iconbar">
+<a href="PAGE1.HTML">Home</a>
+  <a href="https://en.wikipedia.org/wiki/Sh%C5%8Dnen_manga">Wikipedia</a>
+<a href="https://www.viz.com/shonenjump">Shonen Jump</a>
+<a href="https://www.crunchyroll.com/">Crunchy Roll</a>
+  <div class="dropdown">
+    <button class="dropbtn">:.
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://en.wikipedia.org/wiki/dragon_ball" style="font-size:x-large">Dragon Ball</a>
+      <a href="https://en.wikipedia.org/wiki/dragon_ball_z" style="font-size:x-large">Dragon Ball Z</a>
+      <a href="https://en.wikipedia.org/wiki/Dragon_Ball_Super" style="font-size:x-large">Dragon Ball Super</a>
+      <a href="https://en.wikipedia.org/wiki/Naruto" style="font-size:x-large">Naruto</a>
+      <a href="https://en.wikipedia.org/wiki/Naruto#Part_II_2" style="font-size:x-large">Naruto Shippudden</a>
+      <a href="https://en.wikipedia.org/wiki/Boruto:_Naruto_Next_Generations" style="font-size:x-large">Boruto</a>
+      <a href="https://en.wikipedia.org/wiki/Fullmetal_Alchemist_(TV_series)" style="font-size:x-large">Fullmetal Alchemist</a>
+      <a href="https://en.wikipedia.org/wiki/Fullmetal_Alchemist:_Brotherhood" style="font-size:x-large">Fullmetal Alchemist Brotherhood</a>
+      <a href="https://en.wikipedia.org/wiki/Death_Note" style="font-size:x-large">Death Note</a>
+      <a href="https://en.wikipedia.org/wiki/My_Hero_Academia" style="font-size:x-large">My Hero Academia</a>
+          </div>
+  </div>
+</div></CENTER>
+<br><br><br>
+
+<div class="slideshow-container" style="background-color:rgb(94,0,0)">
+
+  
+  <div class="mySlides fade">
+    <center><div class="numbertext">01 / 10</div>
+    <img src="img/1.jpeg" style="width:500px"></center>
+    <div class="text" style="color:White;background-color:black"><b>Shonen</b></div>
+  </div>
+
+  <div class="mySlides fade">
+    <center><div class="numbertext">02 / 10</div>
+    <img src="img/db.jpg" style="width:500px"></center>
+    <div class="text"style="color:White;background-color:black"><b>Dragon Ball</b></div>
+  </div>
+
+  <div class="mySlides fade">
+    <center><div class="numbertext">03 / 10</div>
+    <img src="img/dbz.jpg" style="width:500px"></center>
+    <div class="text"style="color:White;background-color:black"><b>Dragon Ball Z</b></div>
+  </div>
+  <div class="mySlides fade">
+    <center><div class="numbertext">04 / 10</div>
+    <img src="img/dbs.jpg" style="width:500px"></center>
+    <div class="text"style="color:White;background-color:black"><b>Dragon Ball Super</b></div>
+  </div>
+
+  <div class="mySlides fade">
+    <center><div class="numbertext">05 / 10</div>
+    <img src="img/naruto.jpg" style="width:500px"></center>
+    <div class="text" style="color:White;background-color:black"><b>Naruto</b></div>
+  </div>
+ <div class="mySlides fade">
+    <center><div class="numbertext">06 / 10</div>
+    <img src="img/naruto2.jpg" style="width:500px"></center>
+    <div class="text" style="color:White;background-color:black"><b>Naruto Shippuden</b></div>
+  </div>
+ <div class="mySlides fade">
+    <center><div class="numbertext">07 / 10</div>
+    <img src="img/boruto.jpg" style="width:500px"></center>
+    <div class="text" style="color:White;background-color:black"><b>Boruto</b></div>
+  </div>
+ <div class="mySlides fade">
+    <center><div class="numbertext">08 / 10</div>
+    <img src="img/fullmetal.jpg" style="width:500px"></center>
+    <div class="text" style="color:White;background-color:black"><b>Fullmetal Alchemist</b></div>
+  </div>
+ <div class="mySlides fade">
+    <center><div class="numbertext">09 / 10</div>
+    <img src="img/fullmetal2.jpg" style="width:500px"></center>
+    <div class="text" style="color:White;background-color:black"><b>Fullmetal Alchemist Brotherhood</b></div>
+  </div>
+<div class="mySlides fade">
+    <center><div class="numbertext">10 / 10</div>
+    <img src="img/deathnote.jpg" style="width:300px">
+<img src="img/mha.png" style="width:500px"></center>
+    <div class="text" style="color:White;background-color:black"><b>Death Note & My Hero Academia</b></div>  
+</div>
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+<span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+<span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+<span class="dot" onclick="currentSlide(9)"></span> 
+  <span class="dot" onclick="currentSlide(10)"></span>
+<span class="dot" onclick="currentSlide(11)"></span>
+</div>
+<DIV ID="LAST" STYLE="BACKGROUND-COLOR:rgb(94, 0, 0)">
+<b STYLE="COLOR:LIGHTGRAY">ABOUT:-THIS FAN-SITE IS MADE BY AMAN GUPTA, SHASHWAT GUPTA AND ANCHIT MAHAJAN IN CHANDIGARH UNIVERSITY
+CONTACT:-INSTAGRAM(@ANCHITMAHAJAN30) TWITTER(@ANCHIT.MAHAJAN)</b>  
+</div>
+
+<script>
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</BODY>
+</HTML>

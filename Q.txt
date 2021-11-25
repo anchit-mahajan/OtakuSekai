@@ -1,0 +1,27 @@
+
+
+                        DECLARE
+                        A NUMBER;
+                        B NUMBER;
+                        C NUMBER;
+                        D NUMBER;
+                        E NUMBER;
+                        F NUMBER;
+                        PROCEDURE PROCESS (A IN NUMBER,B IN NUMBER,C OUT NUMBER,D OUT NUMBER,
+                        E OUT NUMBER,F OUT NUMBER)IS
+                        BEGIN
+                        C:=A+B;          
+                        D:=A-B;
+                        E:=A*B;
+                        F:=A/B;
+                        END;
+
+                         BEGIN
+                         A:=&FIRSTNUMBER;
+                         B:=&SECONDNUMBER;
+                        PROCESS(A,B,C,D,E,F);
+			DBMS_OUTPUT.PUT_LINE('ADD IS ' ||C);
+			DBMS_OUTPUT.PUT_LINE('SUB IS ' ||D);
+			DBMS_OUTPUT.PUT_LINE('MUL IS ' ||E);
+			DBMS_OUTPUT.PUT_LINE('DIV IS ' ||F);
+			END;
